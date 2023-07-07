@@ -274,7 +274,7 @@ html {
     background-color: var(--background-color-1);
     padding: var(--outer-padding);
     position: relative;
-    z-index: -2;
+    z-index: 2;
 }
 .clients .background_color {
     background-color: var(--background-color-2);
@@ -283,7 +283,7 @@ html {
     bottom: 77%;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
 }
 .clients h2 {
     color: var(--text-color-4);
@@ -304,6 +304,7 @@ html {
     padding: 2rem 1rem;
     margin: 1rem 0;
     max-width: 400px;
+    z-index: 2;
 }
 .clients .card > img {
     width: 22%;
@@ -336,6 +337,9 @@ html {
     font-family: var(--font-family-1);
     font-weight: 400;
 } 
+.clients > p {
+    z-index: 2;
+}
 
         /* my_works styling */
 
