@@ -503,10 +503,7 @@ footer a {
     /* hero styling */
     .hero {
         display: flex;
-        justify-content: center;
-        height: calc(100vh - 80px);
-        padding: 5% 0 0 0;
-        gap: 6vw;
+        justify-content: space-around;
     }
     .hero .intruduction {
         margin-bottom: 2vw;
@@ -514,7 +511,6 @@ footer a {
     .hero .cards_container {
         display: flex;
         gap: min(60px, 4vw);
-        padding-top: min(4vw, 80px);
     }
     .hero .card {
         width: min(250px, 17vw);
