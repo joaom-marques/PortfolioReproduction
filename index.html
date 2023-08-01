@@ -23,7 +23,7 @@
                 <div class="intruduction">
                     <h1>Hello, I'm <br><span>Kevin Smith</span></h1>
                     <p>Image from <a class="freepik" href="https://www.freepik.com/">Freepik</a></p>
-                    <button>Get in Touch</button>
+                    <button id="contact_button" onclick="scrollToForm()">Get in Touch</button>
                 </div>
                 <div class="cards_container">
                     <div class="card">
@@ -207,15 +207,15 @@
                 <p>Drop your Message <br><a href="">kevinsmith@gmail.com</a></p>
             </div>
             <div>
-                <form action="">
+                <form onsubmit="registerContact()" id="contact_form">
                     <div>
-                        <input placeholder="Enter your Name" type="text" name="name" id="">
+                        <input id="contact_name" placeholder="Enter your Name" type="text" name="name">
                     </div>
                     <div>
-                        <input type="email" placeholder="Enter a valid email address" name="email">
+                        <input id="contact_email" type="email" placeholder="Enter a valid email address" name="email">
                     </div>
-                    <div >
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message"></textarea></textarea>
+                    <div id="message_div">
+                        <textarea id="contact_message" name="message" cols="30" rows="10" placeholder="Enter your message" minlength="40"></textarea></textarea>
                     </div>
                     <button type="submit">SUBMIT</button>
                 </form>
@@ -230,6 +230,6 @@
             <p>This page is a Vanilla HTML/CSS reproduction of <a href="https://nicepage.com/st/3554542/personal-page-with-portfolio-website-template">this template</a>. Credits for it's design are of the original creator.</p>
         </div>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
