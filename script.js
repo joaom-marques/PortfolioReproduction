@@ -15,6 +15,9 @@ function registerContact() {
         email: contactEmail,
         message: contactMessage
     }
-    localStorage.setItem(`Contact Submission: ${contactName}`, `{ Email: ${formSubmission.email} },
-{ Message: ${formSubmission.message} }`);
+    const json = JSON.stringify(formSubmission);
+    localStorage.setItem(`Contact submission: ${formSubmission.name}`, json);
+    
+//     localStorage.setItem(`Contact Submission: ${contactName}`, `{ Email: ${formSubmission.email} },
+// { Message: ${formSubmission.message} }`);
 }
